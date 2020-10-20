@@ -1,5 +1,8 @@
 # For Ruby Quiz #32
 
+# Requirements
+requires python 3.5 or higher5
+
 # Instructions
 launch from the terminal with `python main.py`
 
