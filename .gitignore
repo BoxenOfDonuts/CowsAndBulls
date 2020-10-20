@@ -1,0 +1,7 @@
+# Virtualenv
+venv/
+
+# Others
+.idea/
+test.py
+*.pyc
