@@ -19,8 +19,11 @@ wrong place) and bulls are the correct letters in the correct place in the word.
         parser = argparse.ArgumentParser(description='Runs the cows and bulls roadtrip game', prog='main')
         parser.add_argument('-l', '--limit', help='limit the length of the word chosen', default=False)
         args = parser.parse_args()
-
-        self.limit = int(args.limit)
+        limit = int(args.limit)
+        if limit <= 1:
+            limit = 2
+            print('no words < 1 character, setting limit to 2')
+        self.limit = limit
 
     def load_words(self):
         with open('words.txt', 'r') as f:
